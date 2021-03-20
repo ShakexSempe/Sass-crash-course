@@ -77,12 +77,10 @@ a {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
     width: 100vw;
-    background: #0000ff;
+    background: $primary-color2;
     color: #fff;
-    padding: 10px;
+    padding-top: 20px;
     text-align: center;
     font-size: 1.2em;
 
