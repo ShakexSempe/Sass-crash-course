@@ -74,10 +74,19 @@ a {
     }
 
 
-
-
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background: #0000ff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+
+}
 
 
 
@@ -86,10 +95,12 @@ a {
         height: 100vh;
 
         nav {
-            flex-direction: column;
+            flex-direction: column-reverse;
 
             h1 {
                 font-size: 1.2em;
+                text-align: center;
+                margin-top: 40px;
             }
         }
     }
@@ -102,6 +113,8 @@ a {
             h1 {
                 font-size: 1.5em;
             }
+
+            
         }
     }
 }
