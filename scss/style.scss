@@ -1,4 +1,6 @@
-$font-stack:  Arial, Helvetica, sans-serif;
+$font-stack: Arial,
+Helvetica,
+sans-serif;
 $light-color: #f4f4f4;
 $primary-color: #0e6cff;
 $secondary-color: #ff8700;
@@ -19,15 +21,96 @@ img {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 .showcase {
     background-color: $primary-color;
     color: #fff;
     height: 600px;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        li {
+            padding: 15px;
+        }
+
+        a:hover {
+            color: $secondary-color;
+        }
+    }
+
+    a {
+        color: #fff;
+    }
+
+    .showcase-content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background: rgb(22, 22, 245);
+        border-radius: 20px;
+        padding: 5px;
+
+        img {
+            width: 50%;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            line-height: 1.2;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+    }
+
+
+
+
 }
+
+
 
 .container {
     max-width: 1100px;
     padding: 0 30px;
     margin: 0 auto;
     overflow: auto;
+}
+
+
+@media screen and (max-width:450px) {
+    .showcase {
+        height: 100vh;
+
+        nav {
+            flex-direction: column;
+
+            h1 {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    .showcase-content {
+        flex-direction: column-reverse;
+        margin-top: 20vh;
+
+        .showcase-header {
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    }
 }
