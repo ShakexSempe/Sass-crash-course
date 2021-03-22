@@ -24,8 +24,7 @@ a {
 }
 
 .showcase {
-    background-color: $primary-color2;
-    color: #fff;
+    @include set-background($primary-color);
     height: 600px;
 
     nav {
@@ -48,7 +47,7 @@ a {
     }
 
     a {
-        color: #fff;
+        color: set-text-color($primary-color);
     }
 
     .showcase-content {
@@ -66,10 +65,12 @@ a {
         h1 {
             font-size: 2.5em;
             line-height: 1.2;
+            color: set-text-color($primary-color);
         }
 
         p {
             margin: 20px 0;
+            color: set-text-color($primary-color);
         }
     }
 
@@ -77,13 +78,15 @@ a {
 }
 
 footer {
-    width: 100vw;
-    background: $primary-color2;
+    width: 70%;
+    background: $third-color;
     color: #fff;
-    padding-top: 20px;
     text-align: center;
     font-size: 1.2em;
-
+    margin: 50px auto;
+    border-radius: 10px;
+    height: auto;
+    bottom: 0;
 }
 
 
