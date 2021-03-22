@@ -1,6 +1,5 @@
 @import 'config';
-@import 'utilities';
-@import 'buttons';
+
 
 
 * {
@@ -37,6 +36,10 @@ a {
             list-style: none;
         }
 
+        a {
+            color: set-text-color($primary-color);
+        }
+
         li {
             padding: 15px;
         }
@@ -62,57 +65,27 @@ a {
         h1 {
             font-size: 2.5em;
             line-height: 1.2;
-            color: set-text-color($primary-color);
         }
 
-        p {
-            margin: 20px 0;
-            color: set-text-color($primary-color);
-        }
+
     }
 
 
 }
 
 footer {
-    width: 70%;
+    width: 100%;
     background: $third-color;
     color: #fff;
     text-align: center;
     font-size: 1.2em;
-    margin: 50px auto;
-    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
     height: auto;
     bottom: 0;
 }
 
 
-
-@media screen and (max-width:450px) {
-    .showcase {
-        height: 100vh;
-
-        nav {
-            flex-direction: column-reverse;
-
-            h1 {
-                font-size: 1.2em;
-                text-align: center;
-                margin-top: 40px;
-            }
-        }
-    }
-
-    .showcase-content {
-        flex-direction: column-reverse;
-        margin-top: 20vh;
-
-        .showcase-header {
-            h1 {
-                font-size: 1.5em;
-            }
-
-            
-        }
-    }
-}
+@import 'utilities';
+@import 'buttons';
+@import 'mobile';
